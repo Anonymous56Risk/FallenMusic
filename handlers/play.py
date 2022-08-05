@@ -206,7 +206,7 @@ async def play(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("• sᴜᴩᴩᴏʀᴛ •", url=f"https://https://t.me/kukufm66"),
                     InlineKeyboardButton("» ᴄʟᴏsᴇ «", callback_data="close_play")
                 ],
             ]
@@ -237,7 +237,7 @@ async def play(_, message: Message):
         disable_web_page_preview=True,
     )
 
-    return await fallen.delete()
+    return await Amigos.delete()
 
 @Client.on_callback_query(filters.regex("close_play"))
 async def in_close_play(_, query: CallbackQuery):
